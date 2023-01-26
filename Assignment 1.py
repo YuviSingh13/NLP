@@ -1,4 +1,4 @@
-s = "The lake has black fish, brown fish, blue fish in it."
+'''s = "The lake has black fish, brown fish, blue fish in it."
 print(s)
 
 # t = open("input.txt", 'r')
@@ -69,3 +69,5 @@ for i in x:
 
 print("List of common words : ", stop)
 print(dct)
+
+'''
