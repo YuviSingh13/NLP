@@ -7,13 +7,14 @@ para_1 = "India has the second-largest population in the world. India is also kn
 para_2 = "India is a famous country all over the world. India has the second-largest population in the world. Geographically, our country is located to the south of the Asia continent. India is a high population country and well protected from all directions naturally. It is a famous country for its great cultural and traditional values all across the world. It contains a mountain called Himalaya, which is the biggest in the world.Three big oceans surround it in three directions: the south with the Indian Ocean, the east with the Bay of Bengal, and the west with the Arabic sea. India is a democratic country that ranks second in its population. The national language of India is Hindi however, almost fourteen nationally recognized languages are spoken here.".replace(".", "").replace(",", "")
 
 stop_words = set(stopwords.words('english'))
+# print(stop_words)
 
 
 word_tokens_1 = word_tokenize(para_1)
-# print(word_tokens_1)
+print(word_tokens_1)
 print("Words in document 1 : ",len(word_tokens_1))
 word_tokens_2 = word_tokenize(para_2)
-# print(word_tokens_2)
+print(word_tokens_2)
 print("Words in document 2 : ",len(word_tokens_2))
 
 
@@ -76,6 +77,7 @@ doc2 = 0
 
 unique_1 = []
 unique_2 = []
+
 
 for i in range(len(word_tokens_1)-word_limit):
     a = word_tokens_1[i:i+word_limit]
